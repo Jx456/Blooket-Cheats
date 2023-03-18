@@ -31,15 +31,15 @@
             
             axios.get("https://dashboard.blooket.com/api/users").then(async ({ data: { name, tokens } }) => {
                 let prices = Object.values(webpackJsonp.push([[], { ['']: (_, a, b) => { a.cache = b.c }, }, [['']],]).cache).find(x => x?.exports?.a?.Safari).exports.a || {
-                    Medieval: 15,
-                    Breakfast: 15,
-                    Wonderland: 15,
-                    Space: 20,
-                    Bot: 20,
-                    Aquatic: 20,
-                    Safari: 20,
-                    Dino: 25,
-                    "Ice Monster": 25
+                    Medieval: 0,
+                    Breakfast: 0,
+                    Wonderland: 0,
+                    Space: 0,
+                    Bot: 0,
+                    Aquatic: 0,
+                    Safari: 0,
+                    Dino: 0,
+                    "Ice Monster": 0
                 };;
                 let box = prompt("Which box do you want to open? (ex: \"Ice Monster\")").split(' ').map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()).join(' ');
                 if (!Object.keys(prices).map(x => x.toLowerCase()).includes(box.toLowerCase())) return alert("I couldn't find that box!");
